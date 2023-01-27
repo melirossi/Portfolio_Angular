@@ -5,5 +5,13 @@ import { Injectable } from '@angular/core';
 })
 export class AnimacionService {
 
-  constructor() { }
+    constructor() { }
+
+    Carga(archivos:string[]) {
+      for (let archivo of archivo) {
+        let scripts = document.createElement("script");
+        
+      }
+    }
+
 }
