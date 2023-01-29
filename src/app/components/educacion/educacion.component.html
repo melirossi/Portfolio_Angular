@@ -1,0 +1,39 @@
+<div class="educacion" id="educacion">
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col">
+        <h1>Educación</h1>
+      </div>
+    </div>
+
+    <li *ngFor="let educacion of educacionList">
+      <div class="row">          
+        <div class="col-sm-12 col-lg-1"> 
+          <img class="img-fluid" [src]="educacion.logo" alt="Argentina Programa">                                 
+        </div>    
+        <div class="col-sm-12 col-lg-7">
+          <h2>{{educacion.nombre}}</h2> 
+          <h3>{{educacion.lugar}}</h3>      
+        </div>  
+        <div class="col-sm-12 col-lg-4">
+          <h4>{{educacion.fecha}}</h4>              
+        </div> 
+      </div>
+      <div class="row descripcion">
+        <div class="col-sm-12 col-md-11 offset-md-1">
+          <p>{{educacion.d1}}</p>
+          <p>{{educacion.d2}}</p>
+          <p>{{educacion.d3}}</p>
+          <p>{{educacion.d4}}</p>
+          <p>{{educacion.d5}}</p>
+          <p>{{educacion.d6}}</p>
+        </div>
+      </div>
+    </li>      
+    
+    <a href="https://www.linkedin.com/in/melisasrossi" target="_blank"><button type="button" class="btn">Ver más en LinkedIn</button></a>
+    
+  </div>
+</div>
+

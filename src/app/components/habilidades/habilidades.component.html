@@ -1,0 +1,64 @@
+<div class="habilidades"  id="habilidades">
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="col">
+          <h1>Habilidades</h1>
+        </div>
+      </div>
+
+      <div class="row text-center">          
+          <div class="col-sm-12 col-lg-6"> 
+            <button type="button" class="btn nohover">Blandas</button>             
+            <div class="blandas">
+              <li *ngFor="let hab_blandas of blandasList">
+                <h2>{{hab_blandas.nombre}}</h2>
+                <p>{{hab_blandas.descripcion}}</p>  
+              </li>                               
+            </div>              
+            <button type="button" class="btn nohover mt-3">Idiomas</button>    
+            
+            <div class="idiomas">
+              <h2>{{idioma.nombre}}</h2>
+              <span>{{idioma.descripcion}}</span>                               
+            </div>         
+          </div>
+
+          <div class="col-sm-12 col-lg-6">
+            <button type="button" class="btn nohover habduras">Duras</button>
+            <div class="duras">
+              <h2>Lenguajes y frameworks</h2> 
+              <li *ngFor="let hab_duras of durasList">
+                <img class="img-fluid" [src]="hab_duras.lenguajes.logo1" alt="bootstrap">
+                <img class="img-fluid" [src]="hab_duras.lenguajes.logo2" alt="css">
+                <img class="img-fluid" [src]="hab_duras.lenguajes.logo3" alt="html">
+                <img class="img-fluid" [src]="hab_duras.lenguajes.logo4" alt="javascript">
+                <img class="img-fluid" [src]="hab_duras.lenguajes.logo5" alt="java">
+                <img class="img-fluid" [src]="hab_duras.lenguajes.logo6" alt="python"> 
+              </li>  
+
+              <h2>Bases de datos</h2>
+              <li *ngFor="let hab_duras of durasList">
+                <img class="img-fluid" [src]="hab_duras.datos.logo1" alt="mysql">
+              </li> 
+
+              <h2>Herramientas de visualización</h2>
+              <li *ngFor="let hab_duras of durasList">
+                <img class="img-fluid" [src]="hab_duras.visualizacion.logo1" alt="datastudio">
+                <img class="img-fluid" [src]="hab_duras.visualizacion.logo2" alt="figma"> 
+                <img class="img-fluid" [src]="hab_duras.visualizacion.logo3" alt="inkscape">  
+                <img class="img-fluid" [src]="hab_duras.visualizacion.logo4" alt="adobepremiere">
+              </li>
+              
+              <h2>Otras herramientas</h2>
+                <li *ngFor="let hab_duras of durasList">
+                <img class="img-fluid" [src]="hab_duras.otros.logo1" alt="arcgis">
+                <img class="img-fluid" [src]="hab_duras.otros.logo2" alt="git"> 
+                <img class="img-fluid" [src]="hab_duras.otros.logo3" alt="qgis">  
+              </li>
+              
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
