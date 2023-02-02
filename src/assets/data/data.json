@@ -1,6 +1,7 @@
 {
 	"bienvenida": "BIENVENIDO A MI PORTFOLIO WEB",
 	"logo": "/assets/Images/ArgPrograma.svg",
+	"foto": "/assets/Images/Carnet.png",
 	"perfil": "Cuento con dos años de experiencia como becaria doctoral en el área de Riesgo Ambiental, donde trabajo con datos de todo tipo en equipos multidisciplinarios. Actualmente, me encuentro en la búsqueda de nuevas oportunidades laborales dentro del área IT para seguir desarrollando mis habilidades analíticas e informáticas.",
 	"hab_blandas": [{
 			"nombre": "Curiosidad",
